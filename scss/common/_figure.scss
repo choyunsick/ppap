@@ -1,4 +1,4 @@
-figure {
+#figure {
     width: 100%;
     height: 80%;
     overflow: hidden;
@@ -63,7 +63,7 @@ figure {
     }  
 
 @media screen and (max-width:1180px) {
-figure {
+#figure {
     background: linear-gradient(120deg ,blue , red);
     width: 100%;
     height: 80vh;
@@ -92,7 +92,7 @@ figure {
 } 
 }
 @media screen and (max-width:393px) {
-    figure {
+    #figure {
         background: linear-gradient(120deg ,blue , red);
         width: 100%;
         height: 80vh;

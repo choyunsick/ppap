@@ -19,9 +19,5 @@ function changePhone3(){
 }
 
 
-    
-//     setTimeout(function() {
-//       alert("가입이 완료되었습니다 감사합니다.")
-//   },1);         
-  
+
 

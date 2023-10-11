@@ -19,17 +19,17 @@ a {
   text-decoration: none;
 }
 
-header {
+#header {
   width: 100%;
   background-color: #fff;
 }
-header .inner {
+#header .inner {
   width: 1180px;
   height: 200px;
   margin: 0 auto;
   position: relative;
 }
-header .inner h1 {
+#header .inner h1 {
   position: absolute;
   left: 18%;
   bottom: 50px;
@@ -38,20 +38,20 @@ header .inner h1 {
   font-family: "Barriecito", cursive;
   margin-bottom: 40px;
 }
-header .inner .menu {
+#header .inner .menu {
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-header .inner .menu #main {
+#header .inner .menu #main {
   width: 100%;
 }
-header .inner .menu #main li {
+#header .inner .menu #main li {
   float: left;
   text-align: center;
 }
-header .inner .menu #main li a {
+#header .inner .menu #main li a {
   font: bold 20px/1 "arial";
   color: #444;
   display: block;
@@ -59,11 +59,11 @@ header .inner .menu #main li a {
   font: bold 18px/1 "arial";
   color: #000;
 }
-header .inner .menu #main li:hover {
+#header .inner .menu #main li:hover {
   background-color: burlywood;
   color: #000;
 }
-header .inner .cctvCall {
+#header .inner .cctvCall {
   position: absolute;
   right: 30px;
   top: 50%;
@@ -72,7 +72,7 @@ header .inner .cctvCall {
   width: 50px;
   height: 50px;
 }
-header .inner .cctvCall::before {
+#header .inner .cctvCall::before {
   content: "";
   display: block;
   width: 100%;
@@ -83,7 +83,7 @@ header .inner .cctvCall::before {
   left: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-header .inner .cctvCall::after {
+#header .inner .cctvCall::after {
   content: "";
   display: block;
   width: 100%;
@@ -94,7 +94,7 @@ header .inner .cctvCall::after {
   left: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-header .inner .cctvCall span {
+#header .inner .cctvCall span {
   display: block;
   width: 100%;
   height: 2px;
@@ -106,21 +106,21 @@ header .inner .cctvCall span {
   transition: 1s;
   text-indent: -9999px;
 }
-header .inner .cctvCall.on::before {
+#header .inner .cctvCall.on::before {
   top: 50%;
   margin-top: -1px;
   transform: rotate(45deg);
 }
-header .inner .cctvCall.on::after {
+#header .inner .cctvCall.on::after {
   bottom: 50%;
   margin-bottom: -1px;
   transform: rotate(-45deg);
 }
-header .inner .cctvCall.on span {
+#header .inner .cctvCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-header .inner .menuMo {
+#header .inner .menuMo {
   width: 270px;
   height: 100vh;
   background: tomato;
@@ -131,24 +131,24 @@ header .inner .menuMo {
   z-index: 10;
   transition: 0.5s;
 }
-header .inner .menuMo.on {
+#header .inner .menuMo.on {
   left: 0;
 }
-header .inner .menuMo h1 {
+#header .inner .menuMo h1 {
   padding-bottom: 30px;
   border-bottom: 1px solid #666;
 }
-header .inner .menuMo h1 a {
+#header .inner .menuMo h1 a {
   display: block;
   font: bold 24px/1 "arial";
   color: #fff;
   text-align: center;
 }
-header .inner .menuMo h1 span {
+#header .inner .menuMo h1 span {
   font-size: 12px;
   color: #aaa;
 }
-header .inner .menuMo #gnbMo li a {
+#header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -159,58 +159,58 @@ header .inner .menuMo #gnbMo li a {
 }
 
 @media screen and (max-width: 1180px) {
-  header .inner {
+  #header .inner {
     width: 100%;
     height: 300px;
   }
-  header .inner h1 {
+  #header .inner h1 {
     bottom: 150px;
     font-size: 20px;
     text-align: center;
     color: #000;
   }
-  header .inner .menu {
+  #header .inner .menu {
     display: none;
     overflow: hidden;
   }
-  header .inner .cctvCall {
+  #header .inner .cctvCall {
     display: block;
   }
 }
 @media screen and (max-width: 393px) {
-  header .inner {
+  #header .inner {
     width: 100%;
     height: 150px;
   }
-  header .inner h1 {
+  #header .inner h1 {
     bottom: 150px;
     font-size: 20px;
     text-align: center;
     color: #000;
   }
-  header .inner .menu {
+  #header .inner .menu {
     display: none;
     overflow: hidden;
   }
-  header .inner .cctvCall {
+  #header .inner .cctvCall {
     display: block;
   }
 }
-figure {
+#figure {
   width: 100%;
   height: 80%;
   overflow: hidden;
   background-color: #555;
   margin-right: 200px;
 }
-figure video {
+#figure video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
   border-radius: 50px;
 }
-figure .inner {
+#figure .inner {
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -218,7 +218,7 @@ figure .inner {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-figure .inner h2 {
+#figure .inner h2 {
   font: bold 60px/1 "arial";
   font-family: "Barriecito", cursive;
   color: aquamarine;
@@ -227,14 +227,14 @@ figure .inner h2 {
   opacity: 0.7;
   margin-left: 50px;
 }
-figure .inner p {
+#figure .inner p {
   font: 25px/1 "arial";
   color: #fff;
   margin-bottom: 30px;
   font-family: "Tilt Prism", cursive;
   margin-left: 30px;
 }
-figure .inner a {
+#figure .inner a {
   display: block;
   width: 400px;
   height: 30px;
@@ -246,28 +246,28 @@ figure .inner a {
   justify-content: center;
   align-items: center;
 }
-figure .inner a:hover {
+#figure .inner a:hover {
   background-color: #fff;
   color: #555;
 }
 
 @media screen and (max-width: 1180px) {
-  figure {
+  #figure {
     background: linear-gradient(120deg, blue, red);
     width: 100%;
     height: 80vh;
   }
-  figure .inner {
+  #figure .inner {
     width: 100%;
     padding: 0px 20px;
   }
-  figure .inner h2 {
-    font-size: 15px;
+  #figure .inner h2 {
+    font-size: 9px;
     font-family: "Barriecito", cursive;
     color: chartreuse;
-    margin-top: 100px;
+    margin-top: 200px;
   }
-  figure .inner a {
+  #figure .inner a {
     display: fixed;
     width: 100%;
     height: 20px;
@@ -277,23 +277,23 @@ figure .inner a:hover {
   }
 }
 @media screen and (max-width: 393px) {
-  figure {
+  #figure {
     background: linear-gradient(120deg, blue, red);
     width: 100%;
     height: 80vh;
   }
-  figure .inner {
+  #figure .inner {
     width: 100%;
     padding: 0px 10px;
   }
-  figure .inner h2 {
+  #figure .inner h2 {
     font: normal 10vw/1 "arial";
     font-size: 10px;
     font-family: "Barriecito", cursive;
     color: chartreuse;
     margin-top: 100px;
   }
-  figure .inner a {
+  #figure .inner a {
     display: block;
     width: 100%;
     height: 20px;
@@ -303,17 +303,17 @@ figure .inner a:hover {
     color: #fff;
   }
 }
-footer {
+#footer {
   width: 100%;
   padding: 100px 0;
   background-color: #fff;
 }
-footer .newslatter_form {
+#footer .newslatter_form {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
 }
-footer .ente {
+#footer .ente {
   color: #000;
   border: inherit;
   padding: 0 30px;
@@ -321,7 +321,7 @@ footer .ente {
   width: 100%;
   font-size: 17px;
 }
-footer .subs_btn {
+#footer .subs_btn {
   max-width: 289px;
   display: inline-block;
   background: #151515;
@@ -333,37 +333,37 @@ footer .subs_btn {
   font-weight: bold;
   transition: ease-in all 0.5s;
 }
-footer .subs_btn:hover {
+#footer .subs_btn:hover {
   background: #fff;
   color: #151515;
   transition: ease-in all 0.5s;
 }
-footer .inner {
+#footer .inner {
   width: 1180px;
   margin: 0 auto;
 }
-footer .inner::after {
+#footer .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-footer .inner h1 {
+#footer .inner h1 {
   font: bold 24px/"arial";
   color: #666;
   float: left;
 }
-footer .inner ul {
+#footer .inner ul {
   float: right;
 }
-footer .inner ul li {
+#footer .inner ul li {
   float: left;
   margin-left: 20px;
 }
-footer .inner ul li a {
+#footer .inner ul li a {
   font: bold 14px/1 "arial";
   color: #aaa;
 }
-footer .inner address {
+#footer .inner address {
   float: left;
   width: 100%;
   font: 14px/1.3 "arial";
@@ -373,7 +373,7 @@ footer .inner address {
   border-top: 1px solid #888;
   padding-top: 20px;
 }
-footer .inner p {
+#footer .inner p {
   float: left;
   width: 100%;
   font: 12px/1 "arial";
@@ -381,16 +381,16 @@ footer .inner p {
 }
 
 @media screen and (max-width: 1180px) {
-  footer .inner {
+  #footer .inner {
     width: 100%;
     margin: 0 auto;
   }
-  footer .inner::after {
+  #footer .inner::after {
     content: "";
     display: block;
     clear: both;
   }
-  footer .inner h1 {
+  #footer .inner h1 {
     font: bold 12px/"arial";
     color: #666;
     float: left;
@@ -398,16 +398,16 @@ footer .inner p {
   }
 }
 @media screen and (max-width: 393px) {
-  footer .inner {
+  #footer .inner {
     width: 100%;
     margin: 0 auto;
   }
-  footer .inner::after {
+  #footer .inner::after {
     content: "";
     display: block;
     clear: both;
   }
-  footer .inner h1 {
+  #footer .inner h1 {
     font: bold 5px/"arial";
     color: #666;
     float: left;
@@ -848,24 +848,23 @@ footer .inner p {
     display: none;
   }
 }
-.contain {
+#contain {
   width: 100%;
-  height: 70vh;
   background-color: #f5f8ff;
   padding: 30px 30px;
 }
-.contain .container {
+#contain .container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.contain .container h1 {
+#contain .container h1 {
   color: #333;
   font-size: 70px;
   text-align: center;
   font-family: "Barriecito", cursive;
 }
-.contain .container .tab {
+#contain .container .tab {
   position: relative;
   background-color: #fff;
   margin-top: 60px;
@@ -873,29 +872,29 @@ footer .inner p {
   border-radius: 5px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
 }
-.contain .container .tab:nth-of-type(1) label h2 {
+#contain .container .tab:nth-of-type(1) label h2 {
   background: linear-gradient(135deg, #c94949, #93a857);
 }
-.contain .container .tab:nth-of-type(2) label h2 {
+#contain .container .tab:nth-of-type(2) label h2 {
   background: linear-gradient(135deg, #dfa21f, #b8d46a);
 }
-.contain .container .tab:nth-of-type(3) label h2 {
+#contain .container .tab:nth-of-type(3) label h2 {
   background: linear-gradient(135deg, #6b64d1, #1b29e9);
 }
-.contain .container .tab:nth-of-type(4) label h2 {
+#contain .container .tab:nth-of-type(4) label h2 {
   background: linear-gradient(135deg, #8a1e50, #4d344e);
 }
-.contain .container .tab input[type=radio] {
+#contain .container .tab input[type=radio] {
   appearance: none;
 }
-.contain .container .tab input[type=radio]:checked + label::after {
+#contain .container .tab input[type=radio]:checked + label::after {
   transform: rotate(135deg);
   color: #000;
 }
-.contain .container .tab input[type=radio]:checked ~ .content {
+#contain .container .tab input[type=radio]:checked ~ .content {
   max-height: 100vh;
 }
-.contain .container .tab input[type=radio]:checked ~ label h2 {
+#contain .container .tab input[type=radio]:checked ~ label h2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -907,19 +906,19 @@ footer .inner p {
   transition: 0.2s;
   color: rgba(255, 255, 255, 0.2);
 }
-.contain .container .tab input[type=radio]:checked ~ label h3 {
+#contain .container .tab input[type=radio]:checked ~ label h3 {
   background-color: #fff;
   padding: 2px 10px;
   border-radius: 2px;
   color: #333;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.contain .container .tab label {
+#contain .container .tab label {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.contain .container .tab label h2 {
+#contain .container .tab label h2 {
   width: 40px;
   height: 40px;
   background-color: #333;
@@ -931,13 +930,13 @@ footer .inner p {
   border-radius: 5px;
   margin-right: 10px;
 }
-.contain .container .tab label h3 {
+#contain .container .tab label h3 {
   position: relative;
   font-weight: 500;
   color: #333;
   z-index: 10;
 }
-.contain .container .tab label::after {
+#contain .container .tab label::after {
   content: "+";
   position: absolute;
   right: 20px;
@@ -945,12 +944,12 @@ footer .inner p {
   transition: 1s;
   color: rgba(0, 0, 0, 0.2);
 }
-.contain .container .tab .content {
+#contain .container .tab .content {
   max-height: 0;
   transition: 1s;
   overflow: hidden;
 }
-.contain .container .tab .content p {
+#contain .container .tab .content p {
   padding: 10px 0;
   position: relative;
   z-index: 10;
@@ -958,24 +957,24 @@ footer .inner p {
 }
 
 @media screen and (max-width: 1180px) {
-  .contain {
+  #contain {
     width: 100%;
     height: 100vh;
     background-color: #fff;
   }
-  .contain .container h1 {
+  #contain .container h1 {
     font-size: 30px;
     text-align: center;
     color: royalblue;
   }
 }
 @media screen and (max-width: 393px) {
-  .contain {
+  #contain {
     width: 100%;
     height: 100vh;
     background-color: #fff;
   }
-  .contain .container h1 {
+  #contain .container h1 {
     font-size: 10px;
     text-align: center;
     color: royalblue;
@@ -1034,18 +1033,18 @@ footer .inner p {
     color: #000;
   }
 }
-.contact {
+#contact {
   position: relative;
   background-color: #fff;
   padding-top: 50px;
 }
-.contact .heading_container {
+#contact .heading_container {
   justify-content: center;
 }
-.contact .heading_container h2 {
+#contact .heading_container h2 {
   text-transform: unset;
 }
-.contact .heading_container h2 span {
+#contact .heading_container h2 span {
   font-size: 100px;
   font-family: "Barriecito", cursive;
   display: flex;
@@ -1054,12 +1053,12 @@ footer .inner p {
   color: yellowgreen;
 }
 
-.contact input::placeholder {
+#contact input::placeholder {
   color: #000;
   padding-left: 50px;
 }
 
-.contact input {
+#contact input {
   border: none;
   outline: none;
   border-bottom: 0.8px solid #ac9784;
@@ -1068,18 +1067,18 @@ footer .inner p {
   margin-left: 480px;
   padding-bottom: 10px;
 }
-.contact input::placeholder {
+#contact input::placeholder {
   color: #ac9784;
 }
 
-.contact_form-container {
+#contact_form-container {
   padding: 15px 0 15px 0;
 }
-.contact_form-container div input {
+#contact_form-container div input {
   font-style: red;
 }
 
-.contact_form-container button {
+#contact_form-container button {
   border: none;
   background-color: #fd9e2e;
   color: #fff;
@@ -1101,25 +1100,25 @@ footer .inner p {
 }
 
 @media screen and (max-width: 1180px) {
-  .contact {
+  #contact {
     background-color: antiquewhite;
     padding-top: 20px;
     width: 100%;
     height: 60vh;
   }
-  .contact .heading_container h2 span {
+  #contact .heading_container h2 span {
     font-size: 50px;
   }
-  .contact .newslatter_form {
+  #contact .newslatter_form {
     width: 100%;
     margin-left: 50px;
   }
-  .contact input::placeholder {
+  #contact input::placeholder {
     color: #000;
     padding-left: 20px;
     overflow: hidden;
   }
-  .contact input {
+  #contact input {
     border: none;
     outline: none;
     border-bottom: 0.8px solid #ac9784;
@@ -1128,10 +1127,10 @@ footer .inner p {
     margin-left: 100px;
     padding-bottom: 10px;
   }
-  .contact input::placeholder {
+  #contact input::placeholder {
     color: #ac9784;
   }
-  .contact_form-container {
+  #contact_form-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1140,7 +1139,7 @@ footer .inner p {
     overflow: hidden;
     opacity: 0;
   }
-  .contact_form-container button {
+  #contact_form-container button {
     border: none;
     background-color: #fd9e2e;
     color: #fff;
@@ -1159,26 +1158,26 @@ footer .inner p {
   }
 }
 @media screen and (max-width: 393px) {
-  .contact {
+  #contact {
     background-color: #333;
     padding-top: 20px;
     width: 100%;
   }
-  .contact .heading_container h2 span {
+  #contact .heading_container h2 span {
     font-size: 25px;
   }
-  .contact .newslatter_form {
+  #contact .newslatter_form {
     width: 100%;
     margin-left: 50px;
   }
 }
-.contact input::placeholder {
+#contact input::placeholder {
   color: #000;
   padding-left: 5px;
   overflow: hidden;
 }
 
-.contact input {
+#contact input {
   border: none;
   outline: none;
   border-bottom: 0.8px solid #ac9784;
@@ -1188,10 +1187,10 @@ footer .inner p {
   padding-bottom: 10px;
   overflow: hidden;
 }
-.contact input::placeholder {
+#contact input::placeholder {
   color: #ac9784;
 }
-.contact input .contact_form-container {
+#contact input #contact_form-container {
   width: 100%;
   display: flex;
   justify-content: center;
